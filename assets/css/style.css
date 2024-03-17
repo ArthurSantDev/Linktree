@@ -68,8 +68,6 @@ main p {
 /*_____________________________________________________*/
 
 
-
-
 section {  
     display: flex;
     flex-direction: column;
@@ -108,7 +106,6 @@ button:active {  /* Animação dos btn */
 
 
 /*_____________________________________________________*/
-
 
 
 footer {  /* BTN Quadrados */
@@ -153,19 +150,17 @@ footer p {
 
 /* Responsividade para desktop ______________________*/
 
-
-
 @media (min-width: 500px) {
     .container {
-        padding: 20px 20%;
+        padding: 0px 20%;
     }
 
     main {
-        margin-top: 10%;
+        margin-top: 40px;
     }
 
     footer p {
-        margin-top: 10%;
+        margin-top: 60px;
     }
 }
 
