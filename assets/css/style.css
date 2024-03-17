@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin:0; padding:0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', 'sans-serif';
+}
+
+:root {
+    --color-text-b: #000000;
+    --color-text-w: #ffffff;
+    --color-design: #b9b9b9;
+    --color-gradient: linear-gradient(to bottom right,#9494a0,#37373b);
+    --color-button-gradient: linear-gradient(to bottom,#ffffff,#ececec);
+}
+
+.gradient {
+    background: var(--color-button-gradient);
+}
+
+.background {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    background: var(--color-gradient);
+    background-repeat: no-repeat;                
+}
+
+.container {
+    padding: 20px;
+}
+
+a {     /* Custum links */
+    color: var(--color-text);
+    text-decoration: none;
+}
+
+main {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+main img {
+    max-width: 115px;
+    margin-bottom: 20px;
+    border-radius: 100%;
+}
+
+main h1 {
+    font-size: 117%;
+    margin-bottom: 10px;
+    font-weight: 600;
+    color: var(--color-text-w);
+}
+
+main p {
+    font-size: 70%;
+    color: var(--color-text-w);
+}
+
+/*________________________________*/
+
+section {  
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.link button {     
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    width: 100%;
+    padding: 13px 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: var(--color-text-b);
+}
+
+.link b {
+    font-size: 13px;
+    font-weight: 600;
+    margin-left: 20px;
+}
+
+.link i {
+    color: var(--color-text-b);
+    margin-right: 20px;
+    font-size: 22px;
+}
+
+button:active {  /* Animação dos btn */
+    transform: scale(1.03);
+    transition: 0.1s;
+}
+
+/*________________________________*/
+
+footer {  /* BTN Quadrados */
+    text-align: center;
+    margin: 30px;
+}
+
+.icon{ /* color 'class=".gradient" */
+    width: 40px;
+    height:40px;    
+    line-height: 40px; 
+    margin: 0 5px;
+    font-size: 30px;
+    border-radius: 25%;
+    display: inline-block;
+    color: var(--color-text-w);
+}
+
+.icon:active {
+    transform: scale(1.07);
+    transition: 0.1s;
+}
+
+footer p {   
+    font-size: 8px;
+    margin-top: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-design);
+}
+
+.arthursant{ 
+    font-size: 8.5px;
+    margin: 0 3px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #f1f1f1;
+}
+
+/* Responsividade para desktop ////////////////////////////*/
+
+@media (min-width: 500px) {
+    section {
+        margin-top: 10%;
+    }
+
+    footer p {
+        margin-top: 10%;
+    }
+}
+
+@media (max-width: 375px) {
+    section {
+        margin-top: 10%;
+    }
+
+    footer p {
+        margin-top: 27%;
+    }
+
+}
