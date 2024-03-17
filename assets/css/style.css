@@ -11,7 +11,7 @@
     --color-text-w: #ffffff;
     --color-design: #b9b9b9;
     /*--color-gradient: linear-gradient(to bottom right,#9494a0,#37373b);*/
-    --color-gradient: linear-gradient(to bottom right,#c3c3da,#565664);
+    --color-gradient: linear-gradient(to bottom right,#c3c3da,#484855);
     --color-button-gradient: linear-gradient(to bottom,#ffffff,#ececec);
 }
 
@@ -157,7 +157,7 @@ footer p {
 
 @media (min-width: 500px) {
     .container {
-        padding: 20px 400px;
+        padding: 20px 20%;
     }
 
     main {
