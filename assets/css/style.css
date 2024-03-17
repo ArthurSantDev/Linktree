@@ -30,6 +30,7 @@
 
 .container {
     padding: 20px;
+    user-select: none;
 }
 
 a {     /* Custum links */
@@ -61,7 +62,12 @@ main p {
     color: var(--color-text-w);
 }
 
-/*________________________________*/
+
+
+/*_____________________________________________________*/
+
+
+
 
 section {  
     display: flex;
@@ -95,17 +101,21 @@ section {
 
 button:active {  /* Animação dos btn */
     transform: scale(1.03);
-    transition: 0.1s;
+    transition: 0.05s;
 }
 
-/*________________________________*/
+
+
+/*_____________________________________________________*/
+
+
 
 footer {  /* BTN Quadrados */
     text-align: center;
     margin: 30px;
 }
 
-.icon{ /* color 'class=".gradient" */
+.icon{      /* color 'class=".gradient" */
     width: 40px;
     height:40px;    
     line-height: 40px; 
@@ -130,18 +140,26 @@ footer p {
     color: var(--color-design);
 }
 
-.arthursant{ 
-    font-size: 8.5px;
+.arthur{ 
+    font-size: 9px;
     margin: 0 3px;
     text-decoration: none;
     cursor: pointer;
     color: #f1f1f1;
 }
 
-/* Responsividade para desktop ////////////////////////////*/
+
+
+/* Responsividade para desktop ______________________*/
+
+
 
 @media (min-width: 500px) {
-    section {
+    .container {
+        padding: 20px 400px;
+    }
+
+    main {
         margin-top: 10%;
     }
 
@@ -151,7 +169,7 @@ footer p {
 }
 
 @media (max-width: 375px) {
-    section {
+    main {
         margin-top: 10%;
     }
 
