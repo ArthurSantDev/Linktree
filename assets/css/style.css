@@ -5,9 +5,6 @@
     box-sizing: border-box;
     font-family: 'Montserrat', 'sans-serif';
 }
-html {
-    height: 90vh;
-}
 
 :root {
     --color-text-b: #000000;
