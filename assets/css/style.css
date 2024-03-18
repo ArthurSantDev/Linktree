@@ -86,8 +86,8 @@ section {
     transition: 0.3s;
 }
 
-button:hover {  /* Animação dos btn */
-    transform: scale(1.03);
+button:active {  /* Animação dos btn */
+    animation: pulseButton 0.5s ease;
 }
 
 
@@ -122,8 +122,8 @@ footer {  /* BTN Quadrados */
     transition: 0.3s;
 }
 
-.icon:hover {
-    transform: scale(1.1);
+.icon:active {
+    animation: pulseIcon 0.5s ease;
 }
 
 footer p {   
@@ -142,6 +142,31 @@ footer p {
     cursor: pointer;
     color: #f1f1f1;
 }
+
+@keyframes pulseButton {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes pulseIcon {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
 
 /* Responsividade para desktop ________________________________*/
 
