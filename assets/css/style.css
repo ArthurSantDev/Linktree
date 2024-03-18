@@ -6,6 +6,11 @@
     font-family: 'Montserrat', 'sans-serif';
 }
 
+html {
+    width: 100%;
+    height: 80%;
+}
+
 :root {
     --color-text-b: #000000;
     --color-text-w: #ffffff;
@@ -85,9 +90,8 @@ section {
     color: var(--color-text-b);
     transition: 0.3s;
 }
-
 button:active {  /* Animação dos btn */
-    animation: pulseButton 0.5s ease;
+    transform: scale(1.03);
 }
 
 
@@ -123,7 +127,7 @@ footer {  /* BTN Quadrados */
 }
 
 .icon:active {
-    animation: pulseIcon 0.5s ease;
+    transform: scale(1.07);
 }
 
 footer p {   
@@ -142,31 +146,6 @@ footer p {
     cursor: pointer;
     color: #f1f1f1;
 }
-
-@keyframes pulseButton {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.05);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
-@keyframes pulseIcon {
-    0% {
-        transform: scale(1);
-    }
-    50% {
-        transform: scale(1.2);
-    }
-    100% {
-        transform: scale(1);
-    }
-}
-
 
 /* Responsividade para desktop ________________________________*/
 
