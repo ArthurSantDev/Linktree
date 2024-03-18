@@ -86,7 +86,7 @@ section {
     transition: 0.3s;
 }
 button:active {  /* Animação dos btn */
-    transform: scale(1.03);
+    transform: scale(1.05);
 }
 
 
@@ -122,7 +122,7 @@ footer {  /* BTN Quadrados */
 }
 
 .icon:active {
-    transform: scale(1.07);
+    transform: scale(1.2);
 }
 
 footer p {   
